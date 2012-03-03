@@ -1,7 +1,6 @@
 ---
 template: default
 title: sclabs: projects
-permalink: /projects
 ---
 
 h1. Projects

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: sclabs: sccms
-permalink: /sccms
 ---
 
 h1. sccms

@@ -1,7 +1,6 @@
 ---
 template: default
 title: sclabs: Subpage of sccms
-permalink: /sccms/subpage
 ---
 
 h1. Subpage of sccms

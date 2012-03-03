@@ -1,7 +1,6 @@
 ---
 template: default
 title: sclabs: Subpage of sitestatus
-permalink: /sitestatus/subpage
 ---
 
 h1. Subpage of sitestatus

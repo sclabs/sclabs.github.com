@@ -1,6 +1,9 @@
 ---
 template: default
-title: sclabs: projects
+title: projects
+
+projects: active
+allprojects: active
 ---
 
 h1. Projects

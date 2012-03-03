@@ -1,6 +1,9 @@
 ---
 layout: default
 title: sclabs: sitestatus
+
+projects: active
+sitestatus: active
 ---
 
 h1. sitestatus

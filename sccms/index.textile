@@ -1,6 +1,9 @@
 ---
 layout: default
-title: sclabs: sccms
+title: sccms
+
+projects: active
+sccms: active
 ---
 
 h1. sccms

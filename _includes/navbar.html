@@ -1,0 +1,46 @@
+<!-- Le navbar
+================================================== -->
+<div class="navbar navbar-fixed-tops">
+  <div class="navbar-inner">
+    <div class="container" style="width: auto;">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#">sclabs</a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li class="{{ page.home }}"><a href="/">Home</a></li>
+          <li class="{{ page.about }}"><a href="/about">About</a></li>
+          <li class="dropdown {{ page.projects }}">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class="{{ page.allprojects }}"><a href="/projects">All Projects</a></li>
+              <li class="divider"></li>
+              <li class="nav-header">Web Applications</li>
+              <li class="{{ page.sccms }}"><a href="/sccms">sccms</a></li>
+              <li class="{{ page.sitestatus }}"><a href="/sitestatus">sitestatus</a></li>
+            </ul>
+          </li>
+          <li class="{{ page.blog }}"><a href="/blog">Blog</a></li>
+        </ul>
+        <ul class="nav pull-right">
+          <li class="dropdown">
+            <a href="http://gilgi.org" class="dropdown-toggle" data-toggle="dropdown">Gilgi.org Network <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://www.gilgi.org">www.gilgi.org</a></li>
+              <li><a href="http://status.gilgi.org">Status</a></li>
+              <li class="divider"></li>
+              <li><a href="http://romanchickens.gilgi.org">Roman Chickens</a></li>
+              <li><a href="http://scgs.gilgi.org">SCGS</a></li>
+              <li class="active"><a href="/">sclabs</a></li>
+              <li><a href="http://scootscanoe.gilgi.org">Scoot's Canoe</a></li>
+              <li><a href="http://school.gilgi.org">PUWN</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.nav-collapse -->
+    </div>
+  </div><!-- /navbar-inner -->
+</div><!-- /navbar -->

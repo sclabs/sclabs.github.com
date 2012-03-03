@@ -1,0 +1,10 @@
+---
+template: default
+title: About
+
+about: active
+---
+
+h1. About
+
+We are cool

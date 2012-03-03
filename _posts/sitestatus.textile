@@ -4,7 +4,6 @@ title: sclabs: sitestatus
 permalink: /sitestatus
 ---
 
-<h1>sitestatus</h1>
-<ul>
-  <li><a href="/sitestatus/subpage"></li>
-</ul>
+h1. sitestatus
+
+* "Subpage":/sitestatus/subpage/

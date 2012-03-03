@@ -4,7 +4,6 @@ title: sclabs: sccms
 permalink: /sccms
 ---
 
-<h1>sccms</h1>
-<ul>
-  <li><a href="/sccms/subpage"></li>
-</ul>
+h1. sccms
+
+* "Subpage":/sccms/subpage

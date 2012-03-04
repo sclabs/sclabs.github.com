@@ -411,6 +411,12 @@ hr.soften {
 
 @media (min-width: 480px) and (max-width: 768px) {
 
+  /* 300x300 thumbnails look better with a bit of top padding */
+  .thumbnail > img {
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+
   /* Scale down the jumbotron content */
   .jumbotron h1 {
     font-size: 54px;

@@ -1,0 +1,7 @@
+---
+layout: default
+title: Test Post
+blog: active
+---
+
+h1. A test post

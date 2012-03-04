@@ -1,7 +1,6 @@
 ---
-template: default
+layout: default
 title: projects
-
 projects: active
 allprojects: active
 ---

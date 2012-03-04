@@ -1,9 +1,0 @@
----
-template: default
-title: sclabs: Subpage of sitestatus
-
-projects: active
-sitestaus: active
----
-
-h1. Subpage of sitestatus

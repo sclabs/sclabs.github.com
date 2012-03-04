@@ -1,7 +1,6 @@
 ---
-template: default
+layout: default
 title: Subpage of sccms
-
 projects: active
 sccms: active
 ---

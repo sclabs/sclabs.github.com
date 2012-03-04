@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>sclabs: {{ page.title }}</titles>
-  {% include head.html %}
-  {% include css.html %}
+{% include title.html %}
+{% include head.html %}
+
+{% include css.html %}
+
 </head>
-<body>
-  {% include navbar.html %}
-  {{ content }}
-  {% include js.html %}
-  {% include analytics.html%}
+{% include body.html %}
+{% include navbar.html %}
+
+<div class="container">
+
+{{ content }}
+
+</div>
+
+{% include js.html %}
+
+{% include analytics.html%}
+
 </body>
 </html>

@@ -1,0 +1,81 @@
+---
+layout: sectionpage
+title: sccms-nonrel
+subtitle: A port of Simple-Comic-CMS to django-nonrel and django-filetransfers for Google App Engine deployment.
+projects: active
+sccms-nonrel: active
+subnav:
+    - title: Introduction
+      subtitle: What is sccms-nonrel?
+      id: introduction
+      content: If you're looking for an easy way to deploy "Simple-Comic-CMS":https://github.com/sclabs/sccms to the Google App Engine, you've come to the right place. With sccms-nonrel, you can have your own webcomic up and running in no time!
+
+    - title: Prerequisites
+      subtitle: Before we get started...
+      id: prerequisites
+      content: |
+        *(padded) "Python 2.x":http://python.org
+        *(padded) "Django 1.x":https://www.djangoproject.com/
+        *(padded) "Google App Engine SDK for Python":http://code.google.com/appengine/downloads.html#Google_App_Engine_SDK_for_Python
+
+    - title: Installation
+      subtitle: How to get sccms-nonrel
+      id: installation
+      content: |
+        Make sure you have the prerequisites listed above installed. Next, "download the latest version of sccms-nonrel":https://github.com/sclabs/sccms-nonrel/zipball/master. Unzip the archive to any directory on your file system.
+
+        Alternatively, you can clone the git repository by executing
+
+        bc. git clone git://github.com/sclabs/sccms-nonrel.git
+
+        Feel free to fork the repository and develop your own tweaks and features under the conditions of the license (see below).
+
+    - title: Quick-Start
+      subtitle: Get started in eight steps
+      id: quick-start
+      content: |
+        #(padded) Go to "appengine.google.com":http://appengine.google.com, log in with your Google Account, and follow the instructions to enable Google App Engine for your account (if you haven't done so already).
+        #(padded) Create a new app, and remember your app's application identifier.
+        #(padded) In @app.yaml@, replace @myapp@ with the application identifier for your app.
+        #(padded) In @sccms_nonrel/settings.py@, change @SITE_TITLE@ from @'My Awesome Webcomic'@ to whatever you actually want to call your site.
+        #(padded) Run @python manage.py deploy@ and authenticate with your Google Account when prompted.
+        #(padded) Run @python manage.py remote createsuperuser@ to create a superuser for yourself.
+        #(padded) Point your browser to "your_application_identifier.appspot.com/admin/":http://your_application_identifier.appspot.com/admin/
+        #(padded) Click on "Comics" and then "Add comic". Fill out all the fields, upload your image, and click "Save".
+
+        It's that simple! Point your browser to "your_application_identifier.appspot.com":http://your_application_identifier.appspot.com to see your comic!
+
+    - title: Notes
+      subtitle: Some useful tidbits of advice
+      id: notes
+      content: |
+        h3.. Comic Numbering
+
+        p. Make sure your comic numbering is consistent. Presently, sccms-nonrel does not check to make sure that your numbering is correct. Numbering your comics incorrectly will result in broken navigation links.
+
+    - title: Next Steps
+      subtitle: Where do we go from here?
+      id: next-steps
+      content: |
+        h3.. Domain Setup
+
+        p. If you have a domain you'd like to host your webcomic on, you can add a domain to your app by going to the Application Settings page on your Google App Engine dashboard.
+
+        h3.. Site Themes
+
+        p. The templates directory contains a bare-bones example template (@comic.html@) that you should feel free to modify and style however you like.
+
+        h3.. Need Help?
+
+        p. Direct all questions, comments, and bug reports to "sclabs@gilgi.org":mailto:sclabs@gilgi.org.
+
+    - title: License Information
+      subtitle: The small print
+      id: license-information
+      content: |
+        sccms-nonrel is released under the terms of the GNU General Public License, the full text of which is available in the file @GPL@. For details, please visit "www.gnu.org/licenses/gpl.html":http://www.gnu.org/licenses/gpl.html.
+
+        Modules from the django-nonrel project are redistributed under the terms of the license found in the file @LICENSE@.
+
+        sccms-nonrel utilizes and is distributed with Aaron Madison's improved django-filetransfers module, which is redistributed under the terms of the same license.
+---

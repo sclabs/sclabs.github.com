@@ -1,10 +1,76 @@
 ---
-layout: default
+layout: sectionpage
 title: sccms
+subtitle: A simple webcomic CMS built on django.
 projects: active
 sccms: active
+subnav:
+    - title: Introduction
+      subtitle: What is sccms?
+      id: introduction
+      content: Simple-Comic-CMS (sccms) is a bare-bones and easy-to-customize content management system designed primarily for webcomics.
+
+    - title: Prerequisites
+      subtitle: Before we get started...
+      id: prerequisites
+      content: |
+        *(padded) "Python 2.x":http://python.org
+        *(padded) "Django 1.x":https://www.djangoproject.com/
+
+    - title: Installation
+      subtitle: How to get sccms
+      id: installation
+      content: |
+        Make sure you have the prerequisites listed above installed. Next, "download the latest version of sccms":https://github.com/sclabs/sccms/zipball/master. Unzip the archive to any directory on your file system.
+
+        Alternatively, you can clone the git repository by executing
+
+        bc. git clone git://github.com/sclabs/sccms.git
+
+        Feel free to fork the repository and develop your own tweaks and features under the conditions of the license (see below).
+
+    - title: Quick-Start
+      subtitle: Get started in five easy steps
+      id: quick-start
+      content: |
+        #(padded) In @sccms/settings.py@, change @SITE_TITLE@ from 'My Awesome Webcomic' to whatever you actually want to call your site.
+        #(padded) Run @python manage.py syncdb@ and create a superuser for yourself when prompted.
+        #(padded) Run @python manage.py runserver@.
+        #(padded) Point your browser to "127.0.0.1:8000/admin/":http://127.0.0.1:8000/admin/.
+        #(padded) Click on "Comics" and then "Add comic". Fill out all the fields, upload your image, and click "Save".
+
+        It's that simple! Point your browser to "127.0.0.1:8000":http://127.0.0.1:8000/ to see your comic!
+
+    - title: Notes
+      subtitle: Some useful tidbits of advice
+      id: notes
+      content: |
+        h3.. Comic Upload Directory 
+
+        p. You can always add more comics through the admin interface as demonstrated above. The comic image files are uploaded to /media/comics on your site and the url example.com/media/comics should point to them.
+
+        h3.. Comic Numbering
+
+        p. Make sure your comic numbering is consistent. Presently, sccms does not check to make sure that your numbering is correct. Numbering your comics incorrectly will result in broken navigation links.
+
+    - title: Next Steps
+      subtitle: Where do we go from here?
+      id: next-steps
+      content: |
+        h3.. Database Configuration
+
+        p. By default, sccms uses a sqlite database file located at the root of your site called "database.sqlite" for its database. To change this, change the @DATABASES@ variable in @settings.py@, following the instructions in the comments.
+
+        h3.. Site Themes
+
+        p. The templates directory contains a bare-bones example template (@comic.html@) that you should feel free to modify and style however you like.
+
+        h3.. Need Help?
+
+        p. Direct all questions, comments, and bug reports to "sclabs@gilgi.org":mailto:sclabs@gilgi.org.
+
+    - title: License Information
+      subtitle: The small print
+      id: license-information
+      content: sccms is released under the terms of the GNU General Public License, the full text of which is available in the file @GPL@ in the github repository. For details, please visit "www.gnu.org/licenses/gpl.html":http://www.gnu.org/licenses/gpl.html.
 ---
-
-h1. sccms
-
-* "Subpage":/sccms/subpage

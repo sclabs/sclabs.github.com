@@ -1,8 +1,0 @@
----
-layout: default
-title: Subpage of sccms
-projects: active
-sccms: active
----
-
-h1. Subpage of sccms

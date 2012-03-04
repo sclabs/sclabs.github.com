@@ -36,11 +36,12 @@ subnav:
         #(padded) Go to "appengine.google.com":http://appengine.google.com, log in with your Google Account, and follow the instructions to enable Google App Engine for your account (if you haven't done so already).
         #(padded) Create a new app, and remember your app's application identifier.
         #(padded) In @app.yaml@, replace @myapp@ with the application identifier for your app.
-        #(padded) In @settings.py@, change @SITE_TITLE@ from @My Awesome Status Page@ to whatever you actually want to call your site.
+        #(padded) In @settings.py@, change @SITE_TITLE@ from @'My Awesome Status Page'@ to whatever you actually want to call your site.
         #(padded) Run @python manage.py deploy@ and authenticate with your Google Account when prompted.
         #(padded) Run @python manage.py remote createsuperuser@ to create a superuser for yourself.
         #(padded) Point your browser to "your_application_identifier.appspot.com/update/":http://your_application_identifier.appspot.com/update/
         #(padded) Change the example status entry from the Datastore Viewer in your application's Google App Engine dashboard to whatever site you want to track.
+
         It's that simple! Point your browser to "your_application_identifier.appspot.com":http://your_application_identifier.appspot.com to see your status page!
 
     - title: Notes

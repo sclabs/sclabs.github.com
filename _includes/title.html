@@ -1,4 +1,4 @@
-{% if page.blog == "active" %}
+{% if page.blog == "active" and page.title != "Blog" %}
 <title>sclabs Blog: {{ page.title }}</title>
 {% else %}
 <title>sclabs: {{ page.title }}</title>

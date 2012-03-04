@@ -1,3 +1,27 @@
+/* Push the footer down
+-------------------------------------------------- */
+footer {
+  padding-top: 15px;
+}
+
+/* Less margin on p in footer
+-------------------------------------------------- */
+.footer p {
+  margin: 0px;
+}
+
+/* Make blog headers less padded
+-------------------------------------------------- */
+.blog-header {
+  margin: 0px 0px;
+}
+
+/* Shrink the hero-unit h1 just a touch 
+-------------------------------------------------- */
+.hero-unit h1 {
+  font-size: 58px;
+}
+
 /* Space out h3's a bit
 -------------------------------------------------- */
 h3 {
@@ -435,6 +459,12 @@ hr.soften {
 
 /* LARGE DESKTOP SCREENS */
 @media (min-width: 1210px) {
+
+  /* 300x300 thumbnails look better with a bit of top padding */
+  .thumbnail > img {
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
 
   /* Update subnav container */
   .subnav-fixed .nav {

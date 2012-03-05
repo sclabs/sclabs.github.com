@@ -425,6 +425,12 @@ hr.soften {
 
 @media (min-width: 768px) and (max-width: 980px) {
 
+  /* 300x300 thumbnails look better with a bit of top padding */
+  .thumbnail > img {
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+
   /* Remove any padding from the body */
   body {
     padding-top: 0;
@@ -439,12 +445,6 @@ hr.soften {
 
 
 @media (max-width: 980px) {
-
-  /* 300x300 thumbnails look better with a bit of top padding */
-  .thumbnail > img {
-    padding-top: 25px;
-    padding-bottom: 10px;
-  }
 
   /* Unfloat brand */
   .navbar-fixed-top .brand {

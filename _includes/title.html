@@ -1,5 +1,7 @@
 {% if page.blog == "active" and page.title != "Blog" %}
 <title>sclabs Blog: {{ page.title }}</title>
+{% elsif page.home == "active" %}
+<title>Scoot&apos;s Canoe Labs</title>
 {% else %}
 <title>sclabs: {{ page.title }}</title>
 {% endif %}

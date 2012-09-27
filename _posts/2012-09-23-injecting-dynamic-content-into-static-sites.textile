@@ -18,3 +18,5 @@ If the content you're trying to get at isn't served by a JSONP API, and you don'
 <div class="alert">
   <strong>Warning!</strong> The workaround described below exploits the legacy feature of most browsers that allows scripts to be included from external domains. This is technically a violation of the same origin policy and is bad practice in general.
 </div>
+
+After that overly dramatic introduction, it turns out the workaround itself is fairly straightforward. We use a separate server to generate the content and wrap it up into a piece of JavaScript that we include from our static site. If there's a lot of data coming in, we can use HTML5's "<code><script async></code>":http://www.w3schools.com/html5/att_script_async.asp to load it asynchronously. It seems like we're creating more problems than we're solving by doing this, since now we have to write a webapp and run that on another server. Clearly this is not the best solution. If we're set on this, though, we can still accomplish it by throwing an ultralight "Flask":http://flask.pocoo.org/ application onto "Heroku":http://www.heroku.com/.
